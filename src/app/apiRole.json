@@ -1,0 +1,32 @@
+{
+  "menus": [
+    {
+      "label": "Admin Dashboard",
+      "route": "admin",
+      "screen": "ADMINDASHBOARD",
+      "roles": ["ADMIN"],
+      "actions": ["read"]
+    },
+    {
+      "label": "User Dashboard",
+      "route": "user",
+      "screen": "USERDASHBOARD",
+      "roles": ["ADMIN", "USER"],
+      "actions": ["read"]
+    },
+    {
+      "label": "Location",
+      "route": "location",
+      "screen": "LOCATION",
+      "roles": ["ADMIN", "USER"],
+      "actions": ["read"]
+    },
+    {
+      "label": "Report",
+      "route": "report",
+      "screen": "REPORT",
+      "roles": ["ADMIN", "USER"],
+      "actions": ["read"]
+    }
+  ]
+}

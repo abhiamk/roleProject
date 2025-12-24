@@ -1,0 +1,18 @@
+[
+  {
+    "username": "admin",
+    "roles": ["ADMIN"],
+    "permissions": {
+      "LOCATION": ["read", "write", "delete"],
+      "REPORT": ["read"]
+    }
+  },
+  {
+    "username": "user",
+    "roles": ["ADMIN", "USER"],
+    "permissions": {
+      "LOCATION": ["read"],
+      "REPORT": ["read"]
+    }
+  }
+]

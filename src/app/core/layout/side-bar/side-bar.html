@@ -1,0 +1,12 @@
+<p>side-bar works!</p>
+<nav *ngIf="auth.isLoggedIn()">
+
+  <ng-container *ngFor="let m of menus()">
+    <a *ngIf="auth.canShowMenu(m)"
+       [routerLink]="m.route" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">
+       {{ m.label }}
+    </a>
+  </ng-container>
+  <a (click)="auth.logout()">Logout</a>
+</nav>
+
